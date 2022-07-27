@@ -2,6 +2,7 @@
 <html>
 <head>
 <title>Template pv</title>
+<link rel="stylesheet" href="style.css" />
 </head>
 <body>
     <div id="container">
@@ -12,50 +13,9 @@
     </h5>
     </div>
     <div id="div2">
-        <img id="img" alt="FPBM" src="PV/fpbm.png" width="170" height="80"/>
+        <img id="img" alt="FPBM" src="fpbm.png" width="160" height="80"/>
     </div>
-    <style>
-     #div1 {
-        float: left;
-        margin-right: 18px
-     }
-     #div2 {
-        margin: 0 auto ;
-     }
-     #div3 {
-        float: right;
 
-     }
-     #container {
-        display: flex;
-        background-color:white;
-     }
-     #container div{
-        background-color: white;
-        align-items: center;
-        margin: 8px;
-        width: 100%;
-     }
-     #img{
-        margin: 22px
-     }
-     hr.ligne{
-        border: none;
-        border-top: 2px solid;
-        color:black
-     }
-     .p1{
-     text-align: center;
-     }
-     #d1 {
-        float: left;
-        margin-right: 18px;
-     }
-     #d2 {
-        float: right;
-        margin-left: 18px;
-     }
-        </style>
     <div id="div3">
     <h5>جامعة السلطان مولاي سليمان<br><br>
     الكلية المتعددة التخصصات<br><br>
@@ -83,11 +43,11 @@
             </h5>
         </div>
         </div><br>
-    <h5>Nombre de présents: <br>
+    <h5 id="d5">Nombre de présents: <br>
         Nombre des absents:<br><br>
         Surveillants:
     </h5>
-    <table  bgcolor="#FFFFFF" border="1" width="90%" height="140" cellspacing="0" cellpadding="3">
+    <table id="tab1" bgcolor="#FFFFFF" border="1" width="90%" height="140" cellspacing="0" cellpadding="3">
         <!-- <caption align="bottom">Surveillants </caption> -->
         <thead> 
         <th bgcolor="#808080" align="center">Nom</th>
@@ -130,8 +90,8 @@
                 </tr>
         </tbody> 
        </table><br>
- <h5>Liste des étudiants qui ne figurent pas sur la liste officielle: </h5>
- <table  bgcolor="#FFFFFF" border="1" width="90%" height="140" cellspacing="0" cellpadding="5">
+ <h5 id="d6">Liste des étudiants qui ne figurent pas sur la liste officielle: </h5>
+ <table id="tab2" bgcolor="#FFFFFF" border="1" width="90%" height="140" cellspacing="0" cellpadding="5">
     <!-- <caption align="bottom">Surveillants </caption> -->
     <thead> 
     <th bgcolor="#808080" align="center">N°ORD</th>
@@ -180,7 +140,7 @@
     </tr>
     </tbody> 
    </table>
-   <h5>Obseravtion</h5>
+   <h5 id="d7">Obseravtion</h5>
 </body>
 
 </html> 
